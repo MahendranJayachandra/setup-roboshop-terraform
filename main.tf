@@ -5,6 +5,7 @@ module "create components" {
 }
 
 variable components {
+   default = {
     frontend = {},
     mongodb = {},
     redis = {},
@@ -16,4 +17,5 @@ variable components {
     rabbitmq = {},
     payment = {},
     dispatch = {}
+   }
 } 
